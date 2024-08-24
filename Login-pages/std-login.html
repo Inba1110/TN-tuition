@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="../Main/style.css">
+    <link rel="stylesheet" href="./std-login.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container-fluid">
+        <div class="row justify-content-center ">
+            <div class="col-lg-6  d-none d-lg-block">
+                <div class="left-box ">
+                    <img src="../images/login-img/student-login-img.png"  class="login-img pb-3">
+                </div>
+            </div>
+                <div class="col-lg-6 col-md-8 col-12">
+                    <div class="login-form-box justify-content-center mt-5 pt-4 col-lg-10">
+                        <h2 class="text-center mb-4"> Student Login Form</h2>
+                        <h3 >Welcome Back..!</h3>
+                        <p>Enter your details to access Your Account</p>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" style="background-color:  #d6eaf8  ;" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            
+                          </div>
+
+                          <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" style="background-color:  #d6eaf8  ;" placeholder="Password">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your password with anyone else.</small>
+                          </div>
+                          <div class="col-lg-12 justify-content-between">
+                            <a type="button" class="btn col-lg-3 col-md-3 login-btn " href="../studentprofile/std-dashboardNew.html">Login</a>
+                           
+                            <a href=""><h6 class=" btn col-lg-6 col-md-5 mr-2 " style="color:  #102C58; font-weight: 600;">Forget Password ?</h6></a>
+                           
+                           <p>Not a member yet?  <a  href="" style="color:  #102C58; font-weight: 600;"  data-toggle="modal" data-target=".studentregistration ">Register Now</a></p>
+                            <p>Are you a Teacher? <a  href="./teacher-login.html" style="color:  #102C58; font-weight: 600;">Login Now</a></p>
+                          </div>
+                         
+
+
+
+
+                    </div>
+                </div>
+            
+        </div>
+        
+      </div>
+                  <!-- student start -->
+     <div class="modal fade studentregistration  "    tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg " >
+       
+        <div class="modal-content std-form-bg " style="background: none; border:none"  >
+         
+          <button type="button" class="close ml-auto mr-1" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        
+          
+        
+        <div class="modal-body  ">
+          
+          <form class="form-body" name="std-login" onsubmit="return stdloginvalidate()" method="post" action="">
+            <div class="row justify-content-center mb-3"> <h3>Student Registration Form</h3></div>
+          <div class="row justify-content-center">
+            <div class="col-lg-5 col-12">
+              <div class="form-group col-10 mt-2">
+                
+                <input type="text" class="form-control" id="firstName" name="firstname" placeholder="First Name">
+              </div>
+
+            </div>
+            <div class="col-lg-5 col-12">
+              <div class="form-group col-10 mt-2">
+                
+                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
+              </div>
+
+            </div>
+            
+
+            </div>
+            <!-- first row  end-->
+            <div class="row justify-content-center ">
+              <div class="col-lg-5 col-12">
+                <div class="form-group col-10 mt-2">
+                  <label for="dob">Date of Birth</label>
+                  <input type="date" class="form-control" id="dob" name="dob" placeholder="Date of Birth">
+                </div>
+              </div>
+              <div class="col-lg-5 col-12 pr-3">
+                
+                  <legend class="col-form-label col-12 pt-0">Gender</legend>
+                  <div class="form-check form-check-inline ">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Male
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline ">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Female
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline mr-2 ">
+                    <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">
+                      Others
+                    </label>
+                  </div>
+               
+              </div>
+
+              </div>
+              <!-- second row end -->
+              <div class="row justify-content-center">
+                <div class="col-lg-5 col-12">
+                  <div class="form-group col-10 mt-2">
+                    
+                    <input type="text" class="form-control" id="firstName" placeholder="Mobile Number">
+                  </div>
+    
+                </div>
+                <div class="col-lg-5 col-12">
+                  <div class="form-group col-10 mt-2">
+                    
+                    <input type="text" class="form-control is-valid" id="lastName" placeholder="Enter OTP">
+                    <div class="valid-feedback">
+                      Verified OTP
+                    </div>
+                  </div>
+    
+                </div>
+                
+    
+                </div>
+<!-- 3rd row end      -->
+              <div class="row justify-content-center">
+                <div class="col-lg-5 col-12">
+                  <div class="form-group col-10 mt-2">
+                    
+                    <input type="text" class="form-control" id="EmailId" placeholder="Email">
+                  </div>
+
+                </div>
+                <div class="col-lg-5 col-12">
+                  <div class="form-group col-10 mt-2">
+                    
+                    <input type="text" class="form-control " id="lastName" placeholder="Enter Password">
+                   
+                  </div>
+
+                </div>
+                
+
+                </div>
+                <div class="row justify-content-center">
+                  <div class="col-lg-5 col-12">
+                    <div class="form-group col-10">
+                      <label for="exampleFormControlFile1">Upload Profile Img </label>
+                      <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                  </div>
+                  <div class="col-lg-5 col-12">
+                    <div class="col-11 ">
+                      <label class="mr-sm-2" for="inlineFormCustomSelect">What are you studying?</label>
+                      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                        <option selected>Choose...</option>
+                        <option value="1">School</option>
+                        <option value="2">College</option>
+                        <option value="3">Others</option>
+                      </select>
+                    </div>
+
+                  </div>
+                
+                </div>
+               <div class="row justify-content-center">
+                <input href="#" class="btn  btn-lg mt-2 mb-2 btn-register" type="submit" style="background-color: orangered; color: white;"  value="Submit" ></input> 
+                
+
+               </div>
+              
+              </form>
+              <div class="row"></div>
+       
+              </div> <!--body end  -->
+           
+          
+        </div>
+      </div>
+      </div>
+      <!-- ṣtudent end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+     <script  src="./Responsive-Navbar-main/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
